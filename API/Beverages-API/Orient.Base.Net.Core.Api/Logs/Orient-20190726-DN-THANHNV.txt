@@ -1,0 +1,375 @@
+2019-07-26 10:27:22.079 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.259 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.259 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.306 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.307 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.307 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.522 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.522 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.522 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.534 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.534 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.534 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.663 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.663 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.663 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.677 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.677 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:22.677 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.180 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.180 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.180 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.196 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.196 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.196 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.215 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.216 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.216 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.360 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.361 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.361 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.374 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.374 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.374 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.385 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.386 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.386 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.557 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.557 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.557 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.575 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.575 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.575 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.589 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.589 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.589 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.725 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.726 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.726 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:23.739 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.739 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.739 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.751 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.751 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:23.751 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.532 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.532 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.532 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.543 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.544 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.544 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.823 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.823 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.823 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.868 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.868 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:24.868 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:25.090 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:25.091 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:25.091 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:25.275 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:25.275 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:25.275 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:26.869 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:26.869 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:26.869 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.143 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.143 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.143 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.157 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.158 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.158 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.174 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.174 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.175 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.282 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.282 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.282 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.292 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.292 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.292 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.309 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.309 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.309 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.666 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.666 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.666 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.686 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.686 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.687 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.698 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.698 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.698 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.836 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.836 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.837 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 10:27:27.850 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.850 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.850 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.862 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.862 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:27:27.862 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 10:30:09.083 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 10:30:09.087 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 10:30:09.090 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 10:30:47.376 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 10:30:47.389 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 10:30:47.393 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 16:00:19.274 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1564123675301.jpg'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1564123675301.jpg'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 16:00:19.354 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1564123675301.jpg'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1564123675301.jpg'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 16:00:19.357 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1564123675301.jpg'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1564123675301.jpg'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-26 16:10:54.864 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:55.123 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:55.124 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:55.189 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:55.189 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:55.189 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.538 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.538 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.538 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.659 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.659 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.660 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.983 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.984 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:56.984 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:57.012 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:57.012 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:57.012 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:59.771 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:10:59.771 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:10:59.771 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:10:59.779 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:59.780 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:59.780 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:59.789 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:59.789 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:10:59.789 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.175 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.175 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.176 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.186 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.186 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.186 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.196 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.196 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.196 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.450 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.451 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.451 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.525 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.525 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.525 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.550 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.550 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.551 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.934 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.934 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.935 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:00.962 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.963 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.963 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.996 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.997 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:00.997 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.064 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.064 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.065 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.091 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.091 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.091 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.336 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.336 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.340 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.368 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.368 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.370 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.497 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.497 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.498 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.505 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.505 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:02.506 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.069 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.069 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.069 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.194 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.195 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.195 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.215 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.219 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.222 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.237 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.237 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.237 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.376 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.378 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.378 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.398 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.398 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.398 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.407 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.407 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.407 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.514 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.514 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.514 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.522 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.522 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.522 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.535 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.535 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.535 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.655 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.655 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.655 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-26 16:11:03.664 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.665 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.665 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.673 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.673 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-26 16:11:03.673 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.

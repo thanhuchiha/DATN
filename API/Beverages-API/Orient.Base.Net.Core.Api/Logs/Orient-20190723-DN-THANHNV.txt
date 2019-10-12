@@ -1,0 +1,414 @@
+2019-07-23 13:52:48.554 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 13:52:48.655 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 13:52:48.659 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 13:54:03.715 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 13:54:03.732 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 13:54:03.856 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:43:00.632 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:43:00.680 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:43:00.684 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:43:22.700 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:43:22.775 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:43:22.779 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:58:01.681 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:58:01.718 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:58:01.724 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:58:25.021 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:58:25.138 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:58:25.142 +07:00 [Error] General Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'.
+File name: 'C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\wwwroot\Files\avatar\1563435554444.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.GetFile(String folder, String fileName) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:59:46.842 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:59:46.887 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 16:59:46.888 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 17:00:43.043 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 17:00:43.045 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 17:00:43.047 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 17:02:07.675 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 17:02:07.734 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-07-23 17:02:07.737 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Common.Reflections.ExportExcelUtilities.ExportExcel[T](List`1 listT) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Core\Common\Reflections\ExportExcelUtilities.cs:line 60
+   at Orient.Base.Net.Core.Api.Controllers.ExportController.GetJobsExcel(BaseRequestGetAllViewModel baseRequestGetAllViewModel) in C:\Users\thanh.nguyenvan\Desktop\HR\api\Orient.Base.Net.Core.Api\Controllers\ExportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
