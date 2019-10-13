@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Orient.Base.Net.Core.Api.Core.DataAccess.Repositories.Base
 {
-    public interface IRepository<T>
+    public interface IReponsitory<T>
     {
         OrientNetCoreDbContext GetDbContext();
 

@@ -8,7 +8,7 @@ using Orient.Base.Net.Core.Api.Core.Entities;
 
 namespace Orient.Base.Net.Core.Api.Core.DataAccess.Repositories.Base
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    public class Repository<T> : IReponsitory<T> where T : BaseEntity
     {
         #region Protected Properties
 

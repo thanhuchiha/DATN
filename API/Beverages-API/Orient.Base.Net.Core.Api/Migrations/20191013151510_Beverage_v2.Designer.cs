@@ -3,87 +3,23 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Orient.Base.Net.Core.Api.Core.DataAccess;
 
 namespace Orient.Base.Net.Core.Api.Migrations
 {
     [DbContext(typeof(OrientNetCoreDbContext))]
-    partial class OrientNetCoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191013151510_Beverage_v2")]
+    partial class Beverage_v2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Category", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<Guid?>("CreatedBy");
-
-                    b.Property<DateTime?>("CreatedOn");
-
-                    b.Property<Guid?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedOn");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(255);
-
-                    b.Property<bool>("RecordActive");
-
-                    b.Property<bool>("RecordDeleted");
-
-                    b.Property<int>("RecordOrder");
-
-                    b.Property<Guid?>("UpdatedBy");
-
-                    b.Property<DateTime?>("UpdatedOn");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Category");
-                });
-
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.CategoryInShop", b =>
-                {
-                    b.Property<Guid>("CategoryId");
-
-                    b.Property<Guid>("ShopId");
-
-                    b.Property<Guid?>("CreatedBy");
-
-                    b.Property<DateTime?>("CreatedOn");
-
-                    b.Property<Guid?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedOn");
-
-                    b.Property<Guid>("Id");
-
-                    b.Property<bool>("RecordActive");
-
-                    b.Property<bool>("RecordDeleted");
-
-                    b.Property<int>("RecordOrder");
-
-                    b.Property<Guid?>("UpdatedBy");
-
-                    b.Property<DateTime?>("UpdatedOn");
-
-                    b.HasKey("CategoryId", "ShopId");
-
-                    b.HasAlternateKey("Id");
-
-                    b.HasIndex("ShopId");
-
-                    b.ToTable("CategoryInShop");
-                });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Comment", b =>
                 {
@@ -101,9 +37,6 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("DeletedOn");
 
-                    b.Property<Guid?>("ProductId")
-                        .IsRequired();
-
                     b.Property<bool>("RecordActive");
 
                     b.Property<bool>("RecordDeleted");
@@ -114,122 +47,13 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("UpdatedOn");
 
-                    b.Property<Guid?>("UserId")
-                        .IsRequired();
+                    b.Property<Guid?>("UserId");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
 
                     b.HasIndex("UserId");
 
                     b.ToTable("Comment");
-                });
-
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Image", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<Guid?>("CreatedBy");
-
-                    b.Property<DateTime?>("CreatedOn");
-
-                    b.Property<Guid?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedOn");
-
-                    b.Property<Guid?>("ProductId");
-
-                    b.Property<bool>("RecordActive");
-
-                    b.Property<bool>("RecordDeleted");
-
-                    b.Property<int>("RecordOrder");
-
-                    b.Property<Guid?>("UpdatedBy");
-
-                    b.Property<DateTime?>("UpdatedOn");
-
-                    b.Property<string>("url")
-                        .HasMaxLength(255);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Image");
-                });
-
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Product", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<Guid?>("CreatedBy");
-
-                    b.Property<DateTime?>("CreatedOn");
-
-                    b.Property<Guid?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedOn");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(255);
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(255);
-
-                    b.Property<int>("ProductStatus");
-
-                    b.Property<bool>("RecordActive");
-
-                    b.Property<bool>("RecordDeleted");
-
-                    b.Property<int>("RecordOrder");
-
-                    b.Property<Guid?>("UpdatedBy");
-
-                    b.Property<DateTime?>("UpdatedOn");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Product");
-                });
-
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.ProductInCategory", b =>
-                {
-                    b.Property<Guid>("CategoryId");
-
-                    b.Property<Guid>("ProductId");
-
-                    b.Property<Guid?>("CreatedBy");
-
-                    b.Property<DateTime?>("CreatedOn");
-
-                    b.Property<Guid?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedOn");
-
-                    b.Property<Guid>("Id");
-
-                    b.Property<bool>("RecordActive");
-
-                    b.Property<bool>("RecordDeleted");
-
-                    b.Property<int>("RecordOrder");
-
-                    b.Property<Guid?>("UpdatedBy");
-
-                    b.Property<DateTime?>("UpdatedOn");
-
-                    b.HasKey("CategoryId", "ProductId");
-
-                    b.HasAlternateKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductInCategory");
                 });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Role", b =>
@@ -418,50 +242,11 @@ namespace Orient.Base.Net.Core.Api.Migrations
                     b.ToTable("UserInRole");
                 });
 
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.CategoryInShop", b =>
-                {
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Category", "Category")
-                        .WithMany("CategoryInShops")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Shop", "Shop")
-                        .WithMany("CategoryInShops")
-                        .HasForeignKey("ShopId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Comment", b =>
                 {
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Product", "Product")
+                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.User")
                         .WithMany("Comments")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.User", "User")
-                        .WithMany("Comments")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict);
-                });
-
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Image", b =>
-                {
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Product")
-                        .WithMany("Images")
-                        .HasForeignKey("ProductId");
-                });
-
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.ProductInCategory", b =>
-                {
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Category", "Category")
-                        .WithMany("ProductInCategories")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Product", "Product")
-                        .WithMany("ProductInCategories")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Shop", b =>

@@ -11,13 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Core\DataAccess\Repositories\CampaignRepository.cs" />
-    <Compile Remove="Core\DataAccess\Repositories\LocationRepository.cs" />
-    <Compile Remove="Core\DataAccess\Repositories\LocationTypeRepository.cs" />
-    <Compile Remove="Core\DataAccess\Repositories\ProvinceRepository.cs" />
-    <Compile Remove="Core\DataAccess\Repositories\RoleRepository.cs" />
-    <Compile Remove="Core\DataAccess\Repositories\SSOAuthRepository.cs" />
-    <Compile Remove="Core\DataAccess\Repositories\UserRepository.cs" />
+    <Compile Remove="Core\DataAccess\Repository\CampaignRepository.cs" />
+    <Compile Remove="Core\DataAccess\Repository\LocationRepository.cs" />
+    <Compile Remove="Core\DataAccess\Repository\LocationTypeRepository.cs" />
+    <Compile Remove="Core\DataAccess\Repository\ProvinceRepository.cs" />
+    <Compile Remove="Core\DataAccess\Repository\RoleRepository.cs" />
+    <Compile Remove="Core\DataAccess\Repository\SSOAuthRepository.cs" />
+    <Compile Remove="Core\DataAccess\Repository\UserRepository.cs" />
   </ItemGroup>
 
   <ItemGroup>

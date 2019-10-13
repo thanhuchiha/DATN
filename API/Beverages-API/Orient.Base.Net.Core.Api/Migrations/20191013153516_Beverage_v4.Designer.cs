@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Orient.Base.Net.Core.Api.Core.DataAccess;
 
 namespace Orient.Base.Net.Core.Api.Migrations
 {
     [DbContext(typeof(OrientNetCoreDbContext))]
-    partial class OrientNetCoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191013153516_Beverage_v4")]
+    partial class Beverage_v4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

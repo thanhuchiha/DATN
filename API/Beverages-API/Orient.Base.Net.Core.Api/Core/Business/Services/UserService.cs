@@ -46,17 +46,17 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 	{
 		#region Fields
 
-		private readonly IRepository<User> _userRepository;
+		private readonly IReponsitory<User> _userRepository;
 		private readonly ILogger _logger;
 		private readonly IOptions<AppSettings> _appSetting;
-        private readonly IRepository<UserInRole> _userInRoleRepository;
+        private readonly IReponsitory<UserInRole> _userInRoleRepository;
 
         #endregion
 
         #region Constructor
 
-        public UserService(IRepository<User> userRepository, ILogger<UserService> logger,
-			IOptions<AppSettings> appSetting, IRepository<UserInRole> userInRoleRepository)
+        public UserService(IReponsitory<User> userRepository, ILogger<UserService> logger,
+			IOptions<AppSettings> appSetting, IReponsitory<UserInRole> userInRoleRepository)
 		{
 			_userRepository = userRepository;
 			_logger = logger;

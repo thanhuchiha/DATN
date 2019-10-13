@@ -25,7 +25,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
     {
         #region Fields
 
-        private readonly IRepository<Role> _roleRepository;
+        private readonly IReponsitory<Role> _roleRepository;
         private readonly ILogger _logger;
         private readonly IOptions<AppSettings> _appSetting;
 
@@ -33,7 +33,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 
         #region Constructor
 
-        public RoleService(IRepository<Role> roleRepository, ILogger<RoleService> logger, IOptions<AppSettings> appSetting
+        public RoleService(IReponsitory<Role> roleRepository, ILogger<RoleService> logger, IOptions<AppSettings> appSetting
             )
         {
             _roleRepository = roleRepository;

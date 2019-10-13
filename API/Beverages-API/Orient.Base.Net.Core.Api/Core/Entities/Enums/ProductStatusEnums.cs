@@ -5,15 +5,12 @@ using System.Threading.Tasks;
 
 namespace Orient.Base.Net.Core.Api.Core.Entities.Enums
 {
-    public class PriorityEnums
+    public class ProductStatusEnums
     {
-        public enum Priority
+        public enum Product
         {
-            One = 1,
-            Two = 2,
-            Three = 3,
-            Four = 4,
-            Five = 5
+            Still = 1,
+            OutOfStock = 2
         }
     }
 }

@@ -114,7 +114,7 @@ namespace Orient.Base.Net.Core.Api
 			services.AddDbContextPool<OrientNetCoreDbContext>(options => options.UseSqlServer(conn));
 
 			//Register Repository
-			services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+			services.AddScoped(typeof(IReponsitory<>), typeof(Repository<>));
 
             //Config Ldap
 
@@ -241,7 +241,7 @@ namespace Orient.Base.Net.Core.Api
 
 		private void InitDataRole()
 		{
-			var roleRepository = IoCHelper.GetInstance<IRepository<Role>>();
+			var roleRepository = IoCHelper.GetInstance<IReponsitory<Role>>();
 			var roles = new[]
 			{
 				new Role {
@@ -276,7 +276,7 @@ namespace Orient.Base.Net.Core.Api
 
 		private void InitUserAdmin()
 		{
-			var userRepository = IoCHelper.GetInstance<IRepository<User>>();
+			var userRepository = IoCHelper.GetInstance<IReponsitory<User>>();
 			if (userRepository.GetAll().Count() > 1)
 			{
 				return;// It's already init
@@ -313,7 +313,7 @@ namespace Orient.Base.Net.Core.Api
 
 		private void InitUser()
 		{
-			var userRepository = IoCHelper.GetInstance<IRepository<User>>();
+			var userRepository = IoCHelper.GetInstance<IReponsitory<User>>();
 
 			var userDevs = new User[] {
 				new User() {

@@ -5,14 +5,12 @@ using System.Threading.Tasks;
 
 namespace Orient.Base.Net.Core.Api.Core.Entities.Enums
 {
-    public class InterviewEnums
+    public class ShopStatusEnums
     {
-        public enum Status
+        public enum Shop
         {
-            Pending = 1,
-            Waiting = 2,
-            Passed = 3,
-            Failed = 4
+            Open = 1,
+            Close = 2
         }
     }
 }

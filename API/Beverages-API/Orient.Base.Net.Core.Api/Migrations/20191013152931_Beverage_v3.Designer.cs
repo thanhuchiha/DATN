@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Orient.Base.Net.Core.Api.Core.DataAccess;
 
 namespace Orient.Base.Net.Core.Api.Migrations
 {
     [DbContext(typeof(OrientNetCoreDbContext))]
-    partial class OrientNetCoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191013152931_Beverage_v3")]
+    partial class Beverage_v3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -101,8 +103,7 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("DeletedOn");
 
-                    b.Property<Guid?>("ProductId")
-                        .IsRequired();
+                    b.Property<Guid?>("ProductId");
 
                     b.Property<bool>("RecordActive");
 
@@ -114,8 +115,7 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("UpdatedOn");
 
-                    b.Property<Guid?>("UserId")
-                        .IsRequired();
+                    b.Property<Guid?>("UserId");
 
                     b.HasKey("Id");
 
@@ -433,15 +433,13 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Comment", b =>
                 {
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Product", "Product")
+                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Product")
                         .WithMany("Comments")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .HasForeignKey("ProductId");
 
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.User", "User")
+                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.User")
                         .WithMany("Comments")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Image", b =>
