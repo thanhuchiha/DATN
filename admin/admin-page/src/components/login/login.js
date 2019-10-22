@@ -1,15 +1,16 @@
 import React from 'react'
 import { Form, Icon, Input, Button, Checkbox, message } from 'antd';
+
 class NormalLoginForm extends React.Component {
     handleSubmit = e => {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 message.loading('Logging In...', 2.5)
-                .then(() => {
-                    message.success('Now you are loggin in!');
-                    console.log('Recevied values of form : ', values);
-                })
+                    .then(() => {
+                        message.success('Now you are loggin in!');
+                        console.log('Recevied values of form : ', values);
+                    })
                 console.log('Received values of form: ', values);
             }
         });
@@ -18,7 +19,7 @@ class NormalLoginForm extends React.Component {
     render() {
         const { getFieldDecorator } = this.props.form;
         return (
-            <article className="mw5 center bg-white shadow-5 br3 pa3 pa4-ns mv3 ba b--black-10">
+            <article className="mw6 center bg-white shadow-5 br4 pa4 pa5-ns mv5 ba b--black-10">
                 <Form onSubmit={this.handleSubmit} className="login-form">
                     <Form.Item>
                         {getFieldDecorator('username', {
@@ -47,12 +48,13 @@ class NormalLoginForm extends React.Component {
                             initialValue: true,
                         })(<Checkbox>Remember me</Checkbox>)}
                         <a className="login-form-forgot" href="a.com">
-                            Forgot password
-          </a>
+                            Forgot password</a>
+                    </Form.Item>
+                    <Form.Item>
                         <Button type="primary" htmlType="submit" className="login-form-button">
                             Log in
-          </Button>
-                        Or <a href="a.com">register now!</a>
+                        </Button>
+                        Or <a href="/register">register now!</a>
                     </Form.Item>
                 </Form>
             </article>
