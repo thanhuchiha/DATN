@@ -108,13 +108,14 @@ namespace Orient.Base.Net.Core.Api
             Mapper.Initialize(config =>
             {
                 config.AddProfile<UserProfile>();
+                config.AddProfile<CategoryProfile>();
             });
 
 			var conn = Configuration.GetConnectionString("DefaultConnectionString");
 			services.AddDbContextPool<OrientNetCoreDbContext>(options => options.UseSqlServer(conn));
 
 			//Register Repository
-			services.AddScoped(typeof(IReponsitory<>), typeof(Repository<>));
+			services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             //Config Ldap
 
@@ -125,6 +126,9 @@ namespace Orient.Base.Net.Core.Api
 
             //Register MemoryCacheManager
             services.AddScoped<ICacheManager, MemoryCacheManager>();
+
+            //Category Service
+            services.AddScoped<ICategoryService, CategoryService>();
 			
 			// Set Service Provider for IoC Helper
 			IoCHelper.SetServiceProvider(services.BuildServiceProvider());
@@ -241,7 +245,7 @@ namespace Orient.Base.Net.Core.Api
 
 		private void InitDataRole()
 		{
-			var roleRepository = IoCHelper.GetInstance<IReponsitory<Role>>();
+			var roleRepository = IoCHelper.GetInstance<IRepository<Role>>();
 			var roles = new[]
 			{
 				new Role {
@@ -276,7 +280,7 @@ namespace Orient.Base.Net.Core.Api
 
 		private void InitUserAdmin()
 		{
-			var userRepository = IoCHelper.GetInstance<IReponsitory<User>>();
+			var userRepository = IoCHelper.GetInstance<IRepository<User>>();
 			if (userRepository.GetAll().Count() > 1)
 			{
 				return;// It's already init
@@ -313,7 +317,7 @@ namespace Orient.Base.Net.Core.Api
 
 		private void InitUser()
 		{
-			var userRepository = IoCHelper.GetInstance<IReponsitory<User>>();
+			var userRepository = IoCHelper.GetInstance<IRepository<User>>();
 
 			var userDevs = new User[] {
 				new User() {
