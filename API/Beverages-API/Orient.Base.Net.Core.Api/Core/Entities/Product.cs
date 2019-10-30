@@ -22,6 +22,12 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
         [StringLength(255)]
         public string Description { get; set; }
 
+        [StringLength(255)]
+        public string Price { get; set; }
+
+        [StringLength(255)]
+        public string FeeShip { get; set; }
+
         public ProductStatusEnums.Product ProductStatus { get; set; }
 
         public List<Image> Images { get; set; }

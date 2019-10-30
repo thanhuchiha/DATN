@@ -22,13 +22,11 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
 
         public DbSet<Category> Categories { get; set; }
 
-        public DbSet<Shop> Shops { get; set; }
-
-        public DbSet<CategoryInShop> CategoryInShops { get; set; }
-
         public DbSet<Product> Products { get; set; }
 
         public DbSet<ProductInCategory> ProductInCategories { get; set; }
+
+        public DbSet<Cart> Carts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -54,22 +52,6 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
                 .HasOne(pt => pt.Role)
                 .WithMany(p => p.UserInRoles)
                 .HasForeignKey(pt => pt.RoleId);
-
-            // Category In Shop
-            modelBuilder.Entity<CategoryInShop>()
-                .HasOne(u => u.Category).WithMany(u => u.CategoryInShops).IsRequired().OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<CategoryInShop>().HasKey(t => new { t.CategoryId, t.ShopId });
-
-            modelBuilder.Entity<CategoryInShop>()
-                .HasOne(pt => pt.Category)
-                .WithMany(p => p.CategoryInShops)
-                .HasForeignKey(pt => pt.CategoryId);
-
-            modelBuilder.Entity<CategoryInShop>()
-                .HasOne(pt => pt.Shop)
-                .WithMany(p => p.CategoryInShops)
-                .HasForeignKey(pt => pt.ShopId);
 
             // Product In Category
             modelBuilder.Entity<ProductInCategory>()

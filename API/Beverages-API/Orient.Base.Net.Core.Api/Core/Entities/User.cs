@@ -92,8 +92,6 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
 
         public List<UserInRole> UserInRoles { get; set; }
 
-        public List<Shop> Shops { get; set; }
-
         public List<Comment> Comments { get; set; }
         #endregion
     }

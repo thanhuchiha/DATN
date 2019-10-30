@@ -19,8 +19,6 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
         [Required]
         public string Name { get; set; }
 
-        public List<CategoryInShop> CategoryInShops { get; set; }
-
         public List<ProductInCategory> ProductInCategories { get; set; }
 
     }
