@@ -164,7 +164,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
                 }
                 else
                 {
-                    categoryManageModel.SetDateToModel(category);
+                    categoryManageModel.SetDataToModel(category);
 
                     await _categoryResponsitory.UpdateAsync(category);
 

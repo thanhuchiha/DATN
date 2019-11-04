@@ -13,7 +13,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Categories
         [Required]
         public string Name { get; set; }
 
-        public void SetDateToModel(Category category)
+        public void SetDataToModel(Category category)
         {
             category.Name = Name;
         }
