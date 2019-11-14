@@ -16,6 +16,6 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
         }
 
         [StringLength(255)]
-        public string url { get; set; }
+        public string Url { get; set; }
     }
 }

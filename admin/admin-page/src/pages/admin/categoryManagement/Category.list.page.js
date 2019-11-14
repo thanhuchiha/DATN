@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Row, Col, Button, Table } from "reactstrap";
 import Form from "react-validation/build/form";
 import ModalConfirm from "../../../components/modal/modal.confirm";
@@ -6,7 +7,9 @@ import Pagination from "../../../components/pagination/Pagination";
 import ModalInfo from "../../../components/modal/modal.info";
 import ValidationInput from "../../../components/common/validation.input";
 import { toastSuccess, toastError } from "../../../helpers/toast.helper";
-//import lodash from "lodash";
+import lodash from "lodash";
+import { getCategoryList } from "../../../actions/category.list.action";
+import Api from "../../../api/api";
 import { pagination } from "../../../constant/app.constant";
 
 class CategoryListPage extends Component {
@@ -23,7 +26,7 @@ class CategoryListPage extends Component {
             },
             query: ""
         };
-        //this.delayedCallback = lodash.debounce(this.search, 1000);
+        this.delayedCallback = lodash.debounce(this.search, 1000);
     }
 
     toggleDeleteModal = () => {
@@ -70,37 +73,37 @@ class CategoryListPage extends Component {
         this.setState({ item });
     };
 
-    // search = e => {
-    //     this.setState(
-    //         {
-    //             params: {
-    //                 ...this.state.params,
-    //                 skip: 1
-    //             },
-    //             query: e.target.value
-    //         },
-    //         () => {
-    //             this.getCategoryList();
-    //         }
-    //     );
-    // };
+    search = e => {
+        this.setState(
+            {
+                params: {
+                    ...this.state.params,
+                    skip: 1
+                },
+                query: e.target.value
+            },
+            () => {
+                this.getCategoryList();
+            }
+        );
+    };
 
     onSearchChange = e => {
         e.persist();
         this.delayedCallback(e);
     };
 
-    // handlePageClick = e => {
-    //     this.setState(
-    //         {
-    //             params: {
-    //                 ...this.state.params,
-    //                 skip: e.selected + 1
-    //             }
-    //         },
-    //         () => this.getCategoryList()
-    //     );
-    // };
+    handlePageClick = e => {
+        this.setState(
+            {
+                params: {
+                    ...this.state.params,
+                    skip: e.selected + 1
+                }
+            },
+            () => this.getCategoryList()
+        );
+    };
 
     getCategoryList = () => {
         let params = Object.assign({}, this.state.params, {
@@ -112,38 +115,38 @@ class CategoryListPage extends Component {
     addCategory = async () => {
         const { name } = this.state.item;
         const category = { name };
-        // try {
-        //     await Api.addCategory(category);
-        //     this.toggleModalInfo();
-        //     this.getCategoryList();
-        //     toastSuccess("The job category has been created successfully");
-        // } catch (err) {
-        //     toastError(err);
-        // }
+        try {
+            await Api.addCategory(category);
+            this.toggleModalInfo();
+            this.getCategoryList();
+            toastSuccess("The job category has been created successfully");
+        } catch (err) {
+            toastError(err);
+        }
     };
 
     updateCategory = async () => {
         const { id, name } = this.state.item;
         const category = { id, name };
-        // try {
-        //     await Api.updateCategory(category);
-        //     this.toggleModalInfo();
-        //     this.getCategoryList();
-        //     toastSuccess("The job category has been updated successfully");
-        // } catch (err) {
-        //     toastError(err);
-        // }
+        try {
+            await Api.updateCategory(category);
+            this.toggleModalInfo();
+            this.getCategoryList();
+            toastSuccess("The job category has been updated successfully");
+        } catch (err) {
+            toastError(err);
+        }
     };
 
     deleteCategory = async () => {
-        // try {
-        //     await Api.deleteCategory(this.state.itemId);
-        //     this.toggleDeleteModal();
-        //     this.getCategoryList();
-        //     toastSuccess("The job category has been deleted successfully");
-        // } catch (err) {
-        //     toastError(err);
-        // }
+        try {
+            await Api.deleteCategory(this.state.itemId);
+            this.toggleDeleteModal();
+            this.getCategoryList();
+            toastSuccess("The job category has been deleted successfully");
+        } catch (err) {
+            toastError(err);
+        }
     };
 
     saveCategory = () => {
@@ -161,15 +164,15 @@ class CategoryListPage extends Component {
         this.saveCategory();
     }
 
-    // componentDidMount() {
-    //     this.getCategoryList();
-    // }
+    componentDidMount() {
+        this.getCategoryList();
+    }
 
     render() {
         const { isShowDeleteModal, isShowInfoModal, item } = this.state;
-        //const { categoryList } = this.props.categoryList;
-        //const { sources, pageIndex, totalPages } = categoryList;
-        //const hasResults = categoryList.sources && categoryList.sources.length > 0;
+        const { categoryList } = this.props.categoryList;
+        const { sources, pageIndex, totalPages } = categoryList;
+        const hasResults = categoryList.sources && categoryList.sources.length > 0;
         return (
             <div className="animated fadeIn">
                 <ModalConfirm
@@ -238,13 +241,12 @@ class CategoryListPage extends Component {
                         </thead>
 
                         <tbody>
-                            {/* {hasResults &&
-                                sources.map((item,i) => { */}
-                                    {/* return ( */}
-                                        <tr className="table-row" >
-                                            {/* <td > {categoryList.pageIndex !== 0 ? categoryList.pageIndex * categoryList.pageSize - categoryList.pageSize + ++i : ++i }</td> */}
-                                            <td>123</td>
-                                            <td>abc</td>
+                            {hasResults &&
+                                sources.map((item,i) => {
+                                    return (
+                                        <tr className="table-row" key={i}>
+                                            <td > {categoryList.pageIndex !== 0 ? categoryList.pageIndex * categoryList.pageSize - categoryList.pageSize + ++i : ++i }</td>
+                                            <td>{item.name}</td>
                                             <td>
                                                 <Button
                                                     className="btn btn-primary fa fa-pencil"
@@ -261,11 +263,11 @@ class CategoryListPage extends Component {
                         </tbody>
                     </Table>
 
-                    {/* {hasResults && totalPages > 1 && */}
+                    {hasResults && totalPages > 1 &&
                         <Pagination
                             initialPage={0}
-                            totalPages={5}
-                            forcePage={2 - 1}
+                            totalPages={totalPages}
+                            forcePage={pageIndex - 1}
                             pageRangeDisplayed={2}
                             onPageChange={this.handlePageClick}
                         />
@@ -278,4 +280,11 @@ class CategoryListPage extends Component {
     }
 }
 
-export default CategoryListPage;
+export default connect(
+    state => ({
+        categoryList: state.categoryList
+    }),
+    {
+        getCategoryList
+    }
+)(CategoryListPage);

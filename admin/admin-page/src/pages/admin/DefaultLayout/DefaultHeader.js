@@ -105,7 +105,7 @@ class DefaultHeader extends Component {
           <UncontrolledDropdown direction="down">
             <DropdownToggle nav>
               <img
-                src={"../../assets/img/avatars/6.jpg"}
+                src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8aYXulfMqsMbBqAoqW-q_z5kvLXIEW9YYyXTsctVyYvtOwxe&s"}
                 className="img-avatar"
                 alt="admin@bootstrapmaster.com"
               />

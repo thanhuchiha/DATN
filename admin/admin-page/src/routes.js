@@ -7,7 +7,14 @@ const CategoryListPage = React.lazy(() =>
   import("./pages/admin/categoryManagement/Category.list.page")
 );
 
+
 const routes = [
+  {
+    path: "/",
+    exact: true,
+    name: "Admin",
+    component: DefaultLayout
+  },
   {
     path: "/",
     exact: true,

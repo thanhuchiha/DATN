@@ -1,67 +1,135 @@
-import React from 'react'
-import { Form, Icon, Input, Button, Checkbox, message } from 'antd';
-
-class NormalLoginForm extends React.Component {
-    handleSubmit = e => {
-        e.preventDefault();
-        this.props.form.validateFields((err, values) => {
-            if (!err) {
-                message.loading('Logging In...', 2.5)
-                    .then(() => {
-                        message.success('Now you are loggin in!');
-                        console.log('Recevied values of form : ', values);
-                    })
-                console.log('Received values of form: ', values);
-            }
-        });
+import React, { Component } from "react";
+import cookie from "react-cookies";
+import {
+  Button,
+  Card,
+  CardBody,
+  Col,
+  Container,
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  Row
+} from "reactstrap";
+import Loading from "../../components/common/loading.indicator";
+import Api from "../../api/api";
+class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false,
+      user: {
+        email: "",
+        password: ""
+      },
+      error: ""
     };
+  }
 
-    render() {
-        const { getFieldDecorator } = this.props.form;
-        return (
-            <article className="mw6 center bg-white shadow-5 br4 pa4 pa5-ns mv5 ba b--black-10">
-                <Form onSubmit={this.handleSubmit} className="login-form">
-                    <Form.Item>
-                        {getFieldDecorator('username', {
-                            rules: [{ required: true, message: 'Please input your username!' }],
-                        })(
-                            <Input
-                                prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                placeholder="Username"
-                            />,
-                        )}
-                    </Form.Item>
-                    <Form.Item>
-                        {getFieldDecorator('password', {
-                            rules: [{ required: true, message: 'Please input your Password!' }],
-                        })(
-                            <Input
-                                prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                type="password"
-                                placeholder="Password"
-                            />,
-                        )}
-                    </Form.Item>
-                    <Form.Item>
-                        {getFieldDecorator('remember', {
-                            valuePropName: 'checked',
-                            initialValue: true,
-                        })(<Checkbox>Remember me</Checkbox>)}
-                        <a className="login-form-forgot" href="a.com">
-                            Forgot password</a>
-                    </Form.Item>
-                    <Form.Item>
-                        <Button type="primary" htmlType="submit" className="login-form-button">
-                            Log in
-                        </Button>
-                        Or <a href="/register">register now!</a>
-                    </Form.Item>
-                </Form>
-            </article>
-        );
+  onLogin = async (e) => {
+      console.log("now. you are login")
+    e.preventDefault();
+    let { user } = this.state;
+    if (!user.email || !user.password)
+      return this.setState({
+        error: "Please enter the Username and Password!"
+      });
+    console.log(user)
+    try {
+      this.setState({ loading: true, error: "" });
+      const data = await Api.login(user);
+      const token = data;
+      cookie.save("token", token);
+      console.log(token)
+      this.setState({ loading: false });
+      this.props.history.push("/");
+    } catch (err) {
+     // const message = err.response.data.message;
+      this.setState({ loading: false, error: "" });
     }
-}
+  };
 
-const Login = Form.create({ name: 'normal_login' })(NormalLoginForm);
+  onChange = e => {
+    let value = e.target.value;
+    let attr = e.target.name;
+
+    let user = Object.assign({}, this.state.user);
+    user[attr] = value;
+    this.setState({ user, error: "" });
+  };
+
+  render() {
+    const { loading, error } = this.state;
+    return (
+      <>
+        {loading && <Loading />}
+        <div
+          className={`app flex-row align-items-center ${loading &&
+            "wrapper-indicator"}`}
+        >
+          <Container>
+            <Row className="justify-content-center">
+              <Col md="4">
+                <Card className="p-4 text-center">
+                  <CardBody>
+                    <form onSubmit={this.onLogin}>
+                      <p className="text-muted">Login</p>
+                      <InputGroup className="mb-3">
+                        <InputGroupAddon addonType="prepend">
+                          <InputGroupText>
+                            <i className="icon-user" />
+                          </InputGroupText>
+                        </InputGroupAddon>
+                        <Input
+                          name="email"
+                          type="text"
+                          placeholder="Username"
+                          autoComplete="email"
+                          onChange={this.onChange}
+                        />
+                      </InputGroup>
+                      <InputGroup className="mb-4">
+                        <InputGroupAddon addonType="prepend">
+                          <InputGroupText>
+                            <i className="icon-lock" />
+                          </InputGroupText>
+                        </InputGroupAddon>
+                        <Input
+                          name="password"
+                          type="password"
+                          placeholder="Password"
+                          autoComplete="password"
+                          onChange={this.onChange}
+                        />
+                      </InputGroup>
+                      {error && <p style={{ color: "red" }}>{error}</p>}
+                      <Row
+                        style={{
+                          justifyContent: "center"
+                        }}
+                      >
+                        <Col xs="6">
+                          <Button
+                            // onClick={this.onLogin}
+                            color="primary"
+                            className="px-6"
+                            type="submit"
+                          >
+                            Login
+                        </Button>
+                        </Col>
+                      </Row>
+                    </form>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </>
+    );
+  }
+}
 
 export default Login;

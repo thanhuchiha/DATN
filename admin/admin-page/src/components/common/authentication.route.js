@@ -12,7 +12,7 @@ export default class AuthenticationRoute extends Component {
         path={path}
         exact={exact}
         name={name}
-        component={!token ? component : LoginRedirect}
+        component={token ? component : LoginRedirect}
         key={key}
       />
     );
