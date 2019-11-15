@@ -36,12 +36,12 @@ namespace Orient.Base.Net.Core.Api.Controllers
             return Ok(users);
         }
 
-        [HttpGet("hrs")]
-        public async Task<IActionResult> GetAllUserHR(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
-        {
-            var users = await _userService.GetAllUserHRAsync(baseRequestGetAllViewModel);
-            return Ok(users);
-        }
+        //[HttpGet("hrs")]
+        //public async Task<IActionResult> GetAllUserHR(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
+        //{
+        //    var users = await _userService.GetAllUserHRAsync(baseRequestGetAllViewModel);
+        //    return Ok(users);
+        //}
 
         [HttpGet("interviewers")]
         public async Task<IActionResult> GetAllUserInterviewer(BaseRequestGetAllViewModel baseRequestGetAllViewModel)

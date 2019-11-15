@@ -258,23 +258,18 @@ namespace Orient.Base.Net.Core.Api
                 },
                 new Role
                 {
-                    Id = RoleConstants.BODId,
-                    Name = "BOD"
+                    Id = RoleConstants.AdminId,
+                    Name = "ADMIN"
                 },
                 new Role
                 {
-                    Id = RoleConstants.HRMId,
-                    Name = "HR Manager"
+                    Id = RoleConstants.ShipperId,
+                    Name = "Shipper"
                 },
                 new Role
                 {
-                    Id = RoleConstants.HRId,
-                    Name = "HR"
-                },
-                new Role
-                {
-                    Id = RoleConstants.DevId,
-                    Name = "Dev"
+                    Id = RoleConstants.UserId,
+                    Name = "USER"
                 }
             };
 
@@ -370,7 +365,7 @@ namespace Orient.Base.Net.Core.Api
                     new UserInRole()
                     {
                         UserId = user.Id,
-                        RoleId = RoleConstants.DevId
+                        RoleId = RoleConstants.UserId
                     }
                 };
             }
@@ -382,7 +377,7 @@ namespace Orient.Base.Net.Core.Api
                     new UserInRole()
                     {
                         UserId = user.Id,
-                        RoleId = RoleConstants.HRId
+                        RoleId = RoleConstants.ShipperId
                     }
                 };
             }
@@ -394,7 +389,7 @@ namespace Orient.Base.Net.Core.Api
                     new UserInRole()
                     {
                         UserId = user.Id,
-                        RoleId = RoleConstants.HRMId
+                        RoleId = RoleConstants.ShipperId
                     }
                 };
             }
@@ -406,7 +401,7 @@ namespace Orient.Base.Net.Core.Api
                     new UserInRole()
                     {
                         UserId = user.Id,
-                        RoleId = RoleConstants.BODId
+                        RoleId = RoleConstants.AdminId
                     }
                 };
             }

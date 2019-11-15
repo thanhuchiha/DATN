@@ -7,6 +7,11 @@ const CategoryListPage = React.lazy(() =>
   import("./pages/admin/categoryManagement/Category.list.page")
 );
 
+const UserManagementPage = React.lazy(() =>
+  import("./pages/admin/userManagement/user.management.list.page")
+);
+
+const Profile = React.lazy(() => import("./pages/admin/userProfile/user.profile"));
 
 const routes = [
   {
@@ -22,7 +27,13 @@ const routes = [
     component: DefaultLayout
   },
   { path: "/dashboard", name: "Dashboard", component: Dashboard },
-  {path : "/category", name : "Category", component : CategoryListPage}
+  { path: "/category", name: "Category", component: CategoryListPage },
+  { path: "/users/:userId", name: "User Profile", component: Profile },
+  {
+    path: "/user-management",
+    name: "User Management",
+    component: UserManagementPage
+  }
 
   //{ path: "/categories", name: "Job Category", component: CategoryListPage }
 ];

@@ -14,27 +14,21 @@ namespace Orient.Base.Net.Core.Api.Core.Common.Constants
         public static Guid SuperAdminId = new Guid(SA);
 
         /// <summary>
-        /// BoD
+        /// Admin
         /// </summary>
-        public const string BOD = "506F8FC8-816A-4505-82ED-E271447938FE";
-        public static Guid BODId = new Guid(BOD);
+        public const string Admin = "506F8FC8-816A-4505-82ED-E271447938FE";
+        public static Guid AdminId = new Guid(Admin);
 
         /// <summary>
-        /// HR Manager
+        /// Shipper
         /// </summary>
-        public const string HRM = "5D8C397B-5F6B-42D6-87F6-1D73870F8798";
-        public static Guid HRMId = new Guid(HRM);
+        public const string Shipper = "5D8C397B-5F6B-42D6-87F6-1D73870F8798";
+        public static Guid ShipperId = new Guid(Shipper);
 
         /// <summary>
-        /// HR
+        /// User
         /// </summary>
-        public const string HR = "F67AFD57-D2B5-41FF-8FDB-A7F08B57EA58";
-        public static Guid HRId = new Guid(HR);
-
-        /// <summary>
-        /// Dev
-        /// </summary>
-        public const string Dev = "1EA026DB-41BF-4497-8498-94BEE0316C7B";
-        public static Guid DevId = new Guid(Dev);
+        public const string User = "F67AFD57-D2B5-41FF-8FDB-A7F08B57EA58";
+        public static Guid UserId = new Guid(User);
     }
 }

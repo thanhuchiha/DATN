@@ -21,8 +21,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 	{
 		Task<IEnumerable<UserViewModel>> GetAllUserAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel);
 
-		Task<IEnumerable<UserViewModel>> GetAllUserHRAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel);
-
 		Task<IEnumerable<UserViewModel>> GetAllUserInterviewerAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel);
 
 		Task<PagedList<UserViewModel>> ListUserAsync(UserRequestListViewModel userRequestListViewModel);
@@ -133,20 +131,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 			return new PagedList<UserViewModel>(list, userRequestListViewModel.Skip ?? CommonConstants.Config.DEFAULT_SKIP, userRequestListViewModel.Take ?? CommonConstants.Config.DEFAULT_TAKE);
 		}
 
-		public async Task<IEnumerable<UserViewModel>> GetAllUserHRAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
-		{
-			var list = await GetAll()
-			 .Where(x => (string.IsNullOrEmpty(baseRequestGetAllViewModel.Query)
-					 || (x.Name.Contains(baseRequestGetAllViewModel.Query)
-					 || (x.Email.Contains(baseRequestGetAllViewModel.Query))
-					 ))
-					 && (x.UserInRoles.Any(y => y.RoleId == RoleConstants.HRId || y.RoleId == RoleConstants.HRMId)))
-			  .OrderBy(x => x.Name)
-			  .Select(x => new UserViewModel(x))
-			  .ToListAsync();
-
-			return list;
-		}
 
 		public async Task<IEnumerable<UserViewModel>> GetAllUserInterviewerAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
 		{
@@ -155,7 +139,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 					 || (x.Name.Contains(baseRequestGetAllViewModel.Query)
 					 || (x.Email.Contains(baseRequestGetAllViewModel.Query))
 					 ))
-					 && (x.UserInRoles.Any(y => y.RoleId == RoleConstants.DevId)))
+					 && (x.UserInRoles.Any(y => y.RoleId == RoleConstants.UserId)))
 			  .OrderBy(x => x.Name)
 			  .Select(x => new UserViewModel(x))
 			  .ToListAsync();

@@ -14,6 +14,11 @@ export default {
       url: "/category",
       // permissions: ["categories"],
       icon: "fa fa-list"
+    },
+    {
+      name: "User Management",
+      url: "/user-management",
+      icon: "fa fa-users "
     }
   ]
 };
