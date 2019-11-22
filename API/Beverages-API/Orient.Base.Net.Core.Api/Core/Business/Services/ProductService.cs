@@ -30,15 +30,19 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
     public class ProductService : IProductService
     {
         private readonly IRepository<Product> _productResponsitory;
+        private readonly IRepository<ProductInCategory> _productInCategoryReponsitory;
 
-        public ProductService(IRepository<Product> productRepository)
+        public ProductService(IRepository<Product> productRepository, IRepository<ProductInCategory> productInCategoryReponsitory)
         {
             _productResponsitory = productRepository;
+            _productInCategoryReponsitory = productInCategoryReponsitory;
         }
 
         private IQueryable<Product> GetAll()
         {
             return _productResponsitory.GetAll()
+                    .Include(x => x.ProductInCategories)
+                        .ThenInclude(y => y.Category)
                      .Where(x => !x.RecordActive);
         }
 
@@ -115,10 +119,25 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
             }
             else
             {
+                //create product
                 product = AutoMapper.Mapper.Map<Product>(productManageModel);
                 await _productResponsitory.InsertAsync(product);
 
                 product = await GetAll().FirstOrDefaultAsync(x => x.Id == product.Id);
+
+                //create productInCategory
+                var productInCategories = new List<ProductInCategory>();
+                if (productManageModel.CategoryIds != null)
+                {
+                    foreach (var categoryId in productManageModel.CategoryIds)
+                    {
+                        var productInCategory = new ProductInCategory();
+                        productInCategory.ProductId = product.Id;
+                        productInCategory.CategoryId = categoryId;
+                        productInCategories.Add(productInCategory);
+                    }
+                }
+                await _productInCategoryReponsitory.InsertAsync(productInCategories);
                 return new ResponseModel()
                 {
                     StatusCode = System.Net.HttpStatusCode.OK,
@@ -130,7 +149,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 
         public async Task<ResponseModel> UpdateProductAsync(Guid id, ProductManageModel productManageModel)
         {
-            var product = await _productResponsitory.GetByIdAsync(id);
+            var product = await GetAll().FirstOrDefaultAsync(x => x.Id == id);
             if (product == null)
             {
                 return new ResponseModel()
@@ -152,7 +171,26 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
                 }
                 else
                 {
+                    //update Product
                     productManageModel.SetDataToModel(product);
+
+                    
+
+                    //update productInCategory
+                    await _productInCategoryReponsitory.DeleteAsync(product.ProductInCategories);
+
+                    var productInCategories = new List<ProductInCategory>();
+                    foreach(var categoryId in productManageModel.CategoryIds)
+                    {
+                        var productInCategory = new ProductInCategory()
+                        {
+                            ProductId = product.Id,
+                            CategoryId = categoryId
+                        };
+                        productInCategories.Add(productInCategory);
+                    }
+
+                    await _productInCategoryReponsitory.InsertAsync(productInCategories);
 
                     await _productResponsitory.UpdateAsync(product);
 
@@ -189,7 +227,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 
         public async Task<ResponseModel> DeleteProductAsync(Guid id)
         {
-            var product = _productResponsitory.FetchFirstAsync(x => x.Id == id);
+            var product = await GetAll().FirstOrDefaultAsync(x => x.Id == id);
             if (product == null)
             {
                 return new ResponseModel()
@@ -200,7 +238,12 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
             }
             else
             {
+                //delete ProductInCategory
+                await _productInCategoryReponsitory.DeleteAsync(product.ProductInCategories);
+
+                //delete product
                 await _productResponsitory.DeleteAsync(id);
+
                 return new ResponseModel()
                 {
                     StatusCode = System.Net.HttpStatusCode.OK,

@@ -19,6 +19,11 @@ export default {
       name: "User Management",
       url: "/user-management",
       icon: "fa fa-users "
+    },
+    {
+      name: "Product",
+      url: "/product",
+      icon:"fa fa-product-hunt"
     }
   ]
 };

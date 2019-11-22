@@ -4,13 +4,15 @@ import { userManagementListReducer } from "./user.management.list.reducer"
 import { roleListReducer } from "./role.list.reducer"
 import { userListReducer } from "./user.list.reducer"
 import { profileReducer } from "./profile.reducer"
+import { productListReducer } from "./product.list.reducer"
 
 export default combineReducers({
   categoryList: categoryListReducer,
   userManagementList: userManagementListReducer,
   roleList: roleListReducer,
   userList: userListReducer,
-  profile: profileReducer
+  profile: profileReducer,
+  productList: productListReducer
 });
 
 

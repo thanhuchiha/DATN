@@ -28,14 +28,22 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
 
         public DbSet<Cart> Carts { get; set; }
 
+        public DbSet<Shop> Shops { get; set; }
+
+        public DbSet<ProductInShop> ProductInShops { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Comment
+            //1User -> nComment
             modelBuilder.Entity<Comment>()
                 .HasOne(u => u.User).WithMany(u => u.Comments).IsRequired().OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Comment>()
                 .HasOne(u => u.Product).WithMany(u => u.Comments).IsRequired().OnDelete(DeleteBehavior.Restrict);
+
+            ////1Shop - nUser
+            //modelBuilder.Entity<User>()
+            //    .HasOne(u => u.Shop).WithMany(u => u.Users).IsRequired().OnDelete(DeleteBehavior.Restrict);
 
             // User In Role
             modelBuilder.Entity<UserInRole>()
@@ -57,7 +65,7 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
             modelBuilder.Entity<ProductInCategory>()
                 .HasOne(u => u.Product).WithMany(u => u.ProductInCategories).IsRequired().OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<ProductInCategory>().HasKey(t => new { t.CategoryId, t.ProductId });
+            modelBuilder.Entity<ProductInCategory>().HasKey(t => new { t.ProductId, t.CategoryId });
 
             modelBuilder.Entity<ProductInCategory>()
                 .HasOne(pt => pt.Category)
@@ -68,6 +76,22 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
                 .HasOne(pt => pt.Product)
                 .WithMany(p => p.ProductInCategories)
                 .HasForeignKey(pt => pt.ProductId);
+
+            // Product In Shop
+            modelBuilder.Entity<ProductInShop>()
+                .HasOne(u => u.Product).WithMany(u => u.ProductInShops).IsRequired().OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<ProductInShop>().HasKey(t => new { t.ShopId, t.ProductId });
+
+            modelBuilder.Entity<ProductInShop>()
+                .HasOne(pt => pt.Product)
+                .WithMany(p => p.ProductInShops)
+                .HasForeignKey(pt => pt.ProductId);
+
+            modelBuilder.Entity<ProductInShop>()
+                .HasOne(pt => pt.Shop)
+                .WithMany(p => p.ProductInShops)
+                .HasForeignKey(pt => pt.ShopId);
         }
     }
 }

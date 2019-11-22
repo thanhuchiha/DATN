@@ -7,7 +7,7 @@ namespace Orient.Base.Net.Core.Api.Core.Entities.Enums
 {
     public class ShopStatusEnums
     {
-        public enum Shop
+        public enum Status
         {
             Open = 1,
             Close = 2

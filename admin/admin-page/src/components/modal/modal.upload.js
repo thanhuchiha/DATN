@@ -1,56 +1,66 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalFooter } from 'reactstrap';
 import { Input } from "reactstrap";
-import Api from "../../api/api.candidate";
+import Api from "../../api/api.product";
 import { toastSuccess, toastError } from "../../helpers/toast.helper";
 
 class ModalUpload extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      avatarFile:{}
+      imageFile: {}
     };
   }
 
   onHandleChange = (e) => {
     this.setState({
-      avatarFile: e.target.files[0]
+      imageFile: e.target.files[0]
     });
   }
 
   doneUpdate = () => {
     this.setState({
-      avatarFile:{}
+      imageFile: {}
     })
   }
 
   clickOk = async () => {
-    if (!this.state.avatarFile.name) {
-      toastError("Please choose an image to update avatar!!!");
-      return ;
+    console.log("here : ", this.props.item)
+    if (!this.state.imageFile.name) {
+      toastError("Please choose an image to update image product!!!");
+      return;
     }
-    const avatarUrl = await Api.uploadAvatar("avatar", this.state.avatarFile);
-    let item = {...this.props.item, avatarUrl: avatarUrl};
+    let { categoryIds } = this.props.item;
+    if (categoryIds == null) {
+      let listCategoryId = [];
+      this.props.item.categories.forEach(item => {
+        listCategoryId.push(item.id);
+        console.log(listCategoryId);
+      });
+      categoryIds = listCategoryId;
+    }
+    const image = await Api.uploadImage("image", this.state.imageFile);
+    let item = { ...this.props.item, image: image, categoryIds: categoryIds };
     try {
-      await Api.updateCandidate(item);
+      await Api.updateProduct(item);
       this.props.toggleModalUpload();
-      this.props.getCandidateList();
+      this.props.getProductList();
       this.doneUpdate()
-      toastSuccess("The job Candidate has been updated successfully");
+      toastSuccess("The product has been updated successfully");
     } catch (err) {
       toastError(err);
     }
   }
-   
+
   render() {
     return (
       <div>
         <Modal isOpen={this.props.isShowModal} toggle={this.props.toggleModalUpload}>
           <ModalHeader>
-            {this.props.title || "Change Avatar"}
+            {this.props.title || "Change Image"}
           </ModalHeader>
 
-          <Input type="file" name="avatarFile" onChange={this.onHandleChange} accept="image/x-png,image/gif,image/jpeg"/>
+          <Input type="file" name="imageFile" onChange={this.onHandleChange} accept="image/x-png,image/gif,image/jpeg" />
 
           <ModalFooter>
             <Button color="danger" onClick={this.clickOk}>

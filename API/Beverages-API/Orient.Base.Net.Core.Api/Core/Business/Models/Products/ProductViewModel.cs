@@ -1,8 +1,7 @@
-﻿using Orient.Base.Net.Core.Api.Core.Entities;
+﻿using Orient.Base.Net.Core.Api.Core.Business.Models.Categories;
+using Orient.Base.Net.Core.Api.Core.Entities;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Orient.Base.Net.Core.Api.Core.Business.Models.Products
 {
@@ -21,7 +20,8 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Products
                 Name = product.Name;
                 Description = product.Description;
                 Price = product.Price;
-                FeeShip = product.FeeShip;
+                Image = product.Image;
+                Categories = product.ProductInCategories != null ? product.ProductInCategories.Select(y => new CategoryViewModel(y.Category)).ToArray() : null;
             }
         }
 
@@ -33,6 +33,8 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Products
 
         public string Price { get; set; }
 
-        public string FeeShip { get; set; }
+        public string Image { get; set; }
+
+        public CategoryViewModel[] Categories { get; set; }
     }
 }

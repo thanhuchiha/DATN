@@ -1,0 +1,138 @@
+2019-11-22 08:13:30.357 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Business.Services.ProductService.UpdateProductAsync(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Core\Business\Services\ProductService.cs:line 183
+   at Orient.Base.Net.Core.Api.Controllers.ProductController.Update(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\ProductController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 08:13:30.450 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Business.Services.ProductService.UpdateProductAsync(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Core\Business\Services\ProductService.cs:line 183
+   at Orient.Base.Net.Core.Api.Controllers.ProductController.Update(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\ProductController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 08:13:30.452 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Business.Services.ProductService.UpdateProductAsync(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Core\Business\Services\ProductService.cs:line 183
+   at Orient.Base.Net.Core.Api.Controllers.ProductController.Update(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\ProductController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 08:14:42.530 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Business.Services.ProductService.UpdateProductAsync(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Core\Business\Services\ProductService.cs:line 183
+   at Orient.Base.Net.Core.Api.Controllers.ProductController.Update(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\ProductController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 08:14:42.531 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Business.Services.ProductService.UpdateProductAsync(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Core\Business\Services\ProductService.cs:line 183
+   at Orient.Base.Net.Core.Api.Controllers.ProductController.Update(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\ProductController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 08:14:42.532 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Core.Business.Services.ProductService.UpdateProductAsync(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Core\Business\Services\ProductService.cs:line 183
+   at Orient.Base.Net.Core.Api.Controllers.ProductController.Update(Guid id, ProductManageModel productManageModel) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\ProductController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 09:24:03.892 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.UploadFile(String folder, String fileName, IFormFile file) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 09:24:03.934 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.UploadFile(String folder, String fileName, IFormFile file) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 09:24:03.935 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.UploadFile(String folder, String fileName, IFormFile file) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 09:25:44.963 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.UploadFile(String folder, String fileName, IFormFile file) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 09:25:44.964 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.UploadFile(String folder, String fileName, IFormFile file) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-11-22 09:25:44.965 +07:00 [Error] General Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orient.Base.Net.Core.Api.Controllers.MediaController.UploadFile(String folder, String fileName, IFormFile file) in C:\Users\KimAnh\Desktop\Doantotnghiep\API\Beverages-API\Orient.Base.Net.Core.Api\Controllers\MediaController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()

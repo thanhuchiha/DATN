@@ -13,6 +13,10 @@ const UserManagementPage = React.lazy(() =>
 
 const Profile = React.lazy(() => import("./pages/admin/userProfile/user.profile"));
 
+const ProductListPage = React.lazy(() =>
+  import("./pages/admin/productManagement/product.list.page")
+);
+
 const routes = [
   {
     path: "/",
@@ -33,7 +37,8 @@ const routes = [
     path: "/user-management",
     name: "User Management",
     component: UserManagementPage
-  }
+  },
+  {path: "/product", name: "Product", component: ProductListPage}
 
   //{ path: "/categories", name: "Job Category", component: CategoryListPage }
 ];

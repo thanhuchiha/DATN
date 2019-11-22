@@ -125,41 +125,6 @@ namespace Orient.Base.Net.Core.Api.Migrations
                     b.ToTable("Comment");
                 });
 
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Image", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<Guid?>("CreatedBy");
-
-                    b.Property<DateTime?>("CreatedOn");
-
-                    b.Property<Guid?>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedOn");
-
-                    b.Property<Guid?>("ProductId");
-
-                    b.Property<bool>("RecordActive");
-
-                    b.Property<bool>("RecordDeleted");
-
-                    b.Property<int>("RecordOrder");
-
-                    b.Property<Guid?>("UpdatedBy");
-
-                    b.Property<DateTime?>("UpdatedOn");
-
-                    b.Property<string>("Url")
-                        .HasMaxLength(255);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Image");
-                });
-
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Product", b =>
                 {
                     b.Property<Guid>("Id")
@@ -178,7 +143,7 @@ namespace Orient.Base.Net.Core.Api.Migrations
                     b.Property<string>("Description")
                         .HasMaxLength(255);
 
-                    b.Property<string>("FeeShip")
+                    b.Property<string>("Image")
                         .HasMaxLength(255);
 
                     b.Property<string>("Name")
@@ -208,7 +173,42 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.ProductInCategory", b =>
                 {
+                    b.Property<Guid>("ProductId");
+
                     b.Property<Guid>("CategoryId");
+
+                    b.Property<Guid?>("CreatedBy");
+
+                    b.Property<DateTime?>("CreatedOn");
+
+                    b.Property<Guid?>("DeletedBy");
+
+                    b.Property<DateTime?>("DeletedOn");
+
+                    b.Property<Guid>("Id");
+
+                    b.Property<bool>("RecordActive");
+
+                    b.Property<bool>("RecordDeleted");
+
+                    b.Property<int>("RecordOrder");
+
+                    b.Property<Guid?>("UpdatedBy");
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.HasKey("ProductId", "CategoryId");
+
+                    b.HasAlternateKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("ProductInCategory");
+                });
+
+            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.ProductInShop", b =>
+                {
+                    b.Property<Guid>("ShopId");
 
                     b.Property<Guid>("ProductId");
 
@@ -232,13 +232,13 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("UpdatedOn");
 
-                    b.HasKey("CategoryId", "ProductId");
+                    b.HasKey("ShopId", "ProductId");
 
                     b.HasAlternateKey("Id");
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductInCategory");
+                    b.ToTable("ProductInShop");
                 });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Role", b =>
@@ -271,6 +271,48 @@ namespace Orient.Base.Net.Core.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Role");
+                });
+
+            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Shop", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Address");
+
+                    b.Property<string>("AvatarUrl");
+
+                    b.Property<Guid?>("CreatedBy");
+
+                    b.Property<DateTime?>("CreatedOn");
+
+                    b.Property<Guid?>("DeletedBy");
+
+                    b.Property<DateTime?>("DeletedOn");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("FeeShip");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(512);
+
+                    b.Property<bool>("RecordActive");
+
+                    b.Property<bool>("RecordDeleted");
+
+                    b.Property<int>("RecordOrder");
+
+                    b.Property<int>("Status");
+
+                    b.Property<Guid?>("UpdatedBy");
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Shop");
                 });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.User", b =>
@@ -337,6 +379,8 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("ResetPasswordExpiryDate");
 
+                    b.Property<Guid?>("ShopId");
+
                     b.Property<string>("Twitter")
                         .HasMaxLength(512);
 
@@ -345,6 +389,8 @@ namespace Orient.Base.Net.Core.Api.Migrations
                     b.Property<DateTime?>("UpdatedOn");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ShopId");
 
                     b.ToTable("User");
                 });
@@ -397,13 +443,6 @@ namespace Orient.Base.Net.Core.Api.Migrations
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Image", b =>
-                {
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Product")
-                        .WithMany("Images")
-                        .HasForeignKey("ProductId");
-                });
-
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Product", b =>
                 {
                     b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Cart")
@@ -422,6 +461,26 @@ namespace Orient.Base.Net.Core.Api.Migrations
                         .WithMany("ProductInCategories")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.ProductInShop", b =>
+                {
+                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Product", "Product")
+                        .WithMany("ProductInShops")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Shop", "Shop")
+                        .WithMany("ProductInShops")
+                        .HasForeignKey("ShopId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.User", b =>
+                {
+                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Shop")
+                        .WithMany("Users")
+                        .HasForeignKey("ShopId");
                 });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.UserInRole", b =>

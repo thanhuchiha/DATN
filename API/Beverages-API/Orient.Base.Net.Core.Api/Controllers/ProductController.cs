@@ -51,6 +51,7 @@ namespace Orient.Base.Net.Core.Api.Controllers
         }
 
         [HttpPost]
+        [CustomAuthorize]
         public async Task<IActionResult> Post([FromBody] ProductManageModel productManagerModel)
         {
             var responseModel = await _productService.CreateProductAsync(productManagerModel);

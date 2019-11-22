@@ -110,6 +110,7 @@ namespace Orient.Base.Net.Core.Api
                 config.AddProfile<UserProfile>();
                 config.AddProfile<CategoryProfile>();
                 config.AddProfile<ProductProfile>();
+                config.AddProfile<ShopProfile>();
             });
 
             var conn = Configuration.GetConnectionString("DefaultConnectionString");
@@ -133,6 +134,10 @@ namespace Orient.Base.Net.Core.Api
 
             //Product Service
             services.AddScoped<IProductService, ProductService>();
+
+
+            //Shop Service
+            services.AddScoped<IShopService, ShopService>();
 
             // Set Service Provider for IoC Helper
             IoCHelper.SetServiceProvider(services.BuildServiceProvider());
