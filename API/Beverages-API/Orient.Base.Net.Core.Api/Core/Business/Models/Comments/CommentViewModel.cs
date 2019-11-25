@@ -17,10 +17,19 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Comments
         {
             Id = comment.Id;
             Content = comment.Content;
+            Username = comment.User.Name;
+            UserId = comment.UserId;
+            DateComment = comment.CreatedOn;
         }
 
         public Guid Id { get; set; }
 
         public string Content { get; set; }
+
+        public Guid UserId { get; set; }
+
+        public string Username { get; set; }
+
+        public DateTime? DateComment { get; set; }
     }
 }

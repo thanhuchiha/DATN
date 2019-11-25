@@ -32,14 +32,13 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
 
         public DbSet<ProductInShop> ProductInShops { get; set; }
 
+        public DbSet<UserInShop> UserInShops { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //1User -> nComment
             modelBuilder.Entity<Comment>()
-                .HasOne(u => u.User).WithMany(u => u.Comments).IsRequired().OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<Comment>()
-                .HasOne(u => u.Product).WithMany(u => u.Comments).IsRequired().OnDelete(DeleteBehavior.Restrict);
+                .HasOne(u => u.Shop).WithMany(u => u.Comments).IsRequired().OnDelete(DeleteBehavior.Restrict);
 
             ////1Shop - nUser
             //modelBuilder.Entity<User>()
@@ -60,6 +59,22 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
                 .HasOne(pt => pt.Role)
                 .WithMany(p => p.UserInRoles)
                 .HasForeignKey(pt => pt.RoleId);
+
+            // User In Shop
+            modelBuilder.Entity<UserInShop>()
+                .HasOne(u => u.User).WithMany(u => u.UserInShops).IsRequired().OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<UserInShop>().HasKey(t => new { t.UserId, t.ShopId });
+
+            modelBuilder.Entity<UserInShop>()
+                .HasOne(pt => pt.User)
+                .WithMany(p => p.UserInShops)
+                .HasForeignKey(pt => pt.UserId);
+
+            modelBuilder.Entity<UserInShop>()
+                .HasOne(pt => pt.Shop)
+                .WithMany(p => p.UserInShops)
+                .HasForeignKey(pt => pt.ShopId);
 
             // Product In Category
             modelBuilder.Entity<ProductInCategory>()

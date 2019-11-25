@@ -5,6 +5,7 @@ import { roleListReducer } from "./role.list.reducer"
 import { userListReducer } from "./user.list.reducer"
 import { profileReducer } from "./profile.reducer"
 import { productListReducer } from "./product.list.reducer"
+import { shopListReducer } from "./shop.list.reducer"
 
 export default combineReducers({
   categoryList: categoryListReducer,
@@ -12,7 +13,8 @@ export default combineReducers({
   roleList: roleListReducer,
   userList: userListReducer,
   profile: profileReducer,
-  productList: productListReducer
+  productList: productListReducer,
+  shopList: shopListReducer
 });
 
 

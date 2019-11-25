@@ -30,8 +30,10 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
 
         public string AvatarUrl { get; set; }
 
-        public List<User> Users { get; set; }
+        public List<UserInShop> UserInShops { get; set; }
 
         public List<ProductInShop> ProductInShops { get; set; }
+
+        public List<Comment> Comments { get; set; }
     }
 }

@@ -30,8 +30,6 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
         [StringLength(255)]
         public string Image { get; set; }
 
-        public List<Comment> Comments { get; set; }
-
         public List<ProductInCategory> ProductInCategories { get; set; }
 
         public List<ProductInShop> ProductInShops { get; set; }

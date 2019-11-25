@@ -6,6 +6,8 @@ import { watchRoleListSagasAsync } from "./role.list.saga"
 import { watchUserListSagaAsync } from "./user.list.saga"
 import { watchProfileSagasAsync } from "./profile.saga"
 import { watchProductListSagaAsync } from "./product.list.saga"
+import { watchShopListSagaAsync } from "./shop.list.saga"
+
 export default function* sagas() {
   yield all([
     fork(watchCategoryListSagasAsync),
@@ -13,6 +15,7 @@ export default function* sagas() {
     fork(watchRoleListSagasAsync),
     fork(watchUserListSagaAsync),
     fork(watchProfileSagasAsync),
-    fork(watchProductListSagaAsync)
+    fork(watchProductListSagaAsync),
+    fork(watchShopListSagaAsync)
   ]);
 }

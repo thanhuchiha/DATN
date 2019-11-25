@@ -30,15 +30,21 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
     public class ShopService : IShopService
     {
         private readonly IRepository<Shop> _shopResponsitory;
+        private readonly IRepository<UserInShop> _userInShopRepository;
 
-        public ShopService(IRepository<Shop> shopRepository)
+        public ShopService(IRepository<Shop> shopRepository, IRepository<UserInShop> userInShopRepository)
         {
             _shopResponsitory = shopRepository;
+            _userInShopRepository = userInShopRepository;
         }
 
         private IQueryable<Shop> GetAll()
         {
             return _shopResponsitory.GetAll()
+                .Include(x => x.UserInShops)
+                .ThenInclude(y => y.User)
+                    .ThenInclude(y => y.UserInRoles)
+                        .ThenInclude(z => z.Role)
                      .Where(x => !x.RecordActive);
         }
 
@@ -115,8 +121,23 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
             }
             else
             {
+                //create Shop
                 shop = AutoMapper.Mapper.Map<Shop>(shopManagerModel);
                 await _shopResponsitory.InsertAsync(shop);
+
+                //create UserInShop
+                var userInShops = new List<UserInShop>();
+                if (shopManagerModel.UserIds != null)
+                {
+                    foreach (var userId in shopManagerModel.UserIds)
+                    {
+                        var userInShop = new UserInShop();
+                        userInShop.ShopId = shop.Id;
+                        userInShop.UserId = userId;
+                        userInShops.Add(userInShop);
+                    }
+                }
+                await _userInShopRepository.InsertAsync(userInShops);
 
                 shop = await GetAll().FirstOrDefaultAsync(x => x.Id == shop.Id);
                 return new ResponseModel()
@@ -130,7 +151,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 
         public async Task<ResponseModel> DeleteShopAsync(Guid id)
         {
-            var shop = _shopResponsitory.FetchFirstAsync(x => x.Id == id);
+            var shop = await GetAll().FirstOrDefaultAsync(x => x.Id == id);
             if (shop == null)
             {
                 return new ResponseModel()
@@ -141,6 +162,9 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
             }
             else
             {
+                //delete UserInShop
+                await _userInShopRepository.DeleteAsync(shop.UserInShops);
+
                 await _shopResponsitory.DeleteAsync(id);
                 return new ResponseModel()
                 {
@@ -177,7 +201,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 
         public async Task<ResponseModel> UpdateShopAsync(Guid id, ShopManageModel shopManageModel)
         {
-            var shop = await _shopResponsitory.GetByIdAsync(id);
+            var shop = await GetAll().FirstOrDefaultAsync(x => x.Id == id);
             if (shop == null)
             {
                 return new ResponseModel()
@@ -201,6 +225,21 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
                 {
                     shopManageModel.SetDataToModel(shop);
 
+                    await _userInShopRepository.DeleteAsync(shop.UserInShops);
+
+                    //update UserInShop
+                    var userInShops = new List<UserInShop>();
+                    foreach (var userId in shopManageModel.UserIds)
+                    {
+                        var userInShop = new UserInShop();
+                        userInShop.ShopId = shop.Id;
+                        userInShop.UserId = userId;
+                        userInShops.Add(userInShop);
+                    }
+
+                    await _userInShopRepository.InsertAsync(userInShops);
+
+                    //updateshop
                     await _shopResponsitory.UpdateAsync(shop);
 
                     return new ResponseModel()

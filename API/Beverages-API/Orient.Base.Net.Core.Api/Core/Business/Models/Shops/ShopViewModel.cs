@@ -1,4 +1,5 @@
-﻿using Orient.Base.Net.Core.Api.Core.Entities;
+﻿using Orient.Base.Net.Core.Api.Core.Business.Models.Users;
+using Orient.Base.Net.Core.Api.Core.Entities;
 using Orient.Base.Net.Core.Api.Core.Entities.Enums;
 using System;
 using System.Collections.Generic;
@@ -14,15 +15,19 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Shops
 
         }
 
-        public ShopViewModel(Shop Shop) : this()
+        public ShopViewModel(Shop shop) : this()
         {
-            Id = Shop.Id;
-            Name = Shop.Name;
-            Address = Shop.Address;
-            Description = Shop.Description;
-            FeeShip = Shop.FeeShip;
-            Status = Shop.Status;
-            AvatarUrl = Shop.AvatarUrl;
+            if(shop != null)
+            {
+                Id = shop.Id;
+                Name = shop.Name;
+                Address = shop.Address;
+                Description = shop.Description;
+                FeeShip = shop.FeeShip;
+                Status = shop.Status;
+                AvatarUrl = shop.AvatarUrl;
+                Users = shop.UserInShops != null ? shop.UserInShops.Select(y => new UserViewModel(y.User)).ToArray() : null;
+            }
         }
 
         public Guid Id { get; set; }
@@ -38,5 +43,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Shops
         public ShopStatusEnums.Status Status { get; set; }
 
         public string AvatarUrl { get; set; }
+
+        public UserViewModel[] Users { get; set; }
     }
 }

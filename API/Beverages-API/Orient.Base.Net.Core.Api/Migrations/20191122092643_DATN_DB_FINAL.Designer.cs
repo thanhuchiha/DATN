@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Orient.Base.Net.Core.Api.Core.DataAccess;
 
 namespace Orient.Base.Net.Core.Api.Migrations
 {
     [DbContext(typeof(OrientNetCoreDbContext))]
-    partial class OrientNetCoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191122092643_DATN_DB_FINAL")]
+    partial class DATN_DB_FINAL
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -100,23 +102,25 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("DeletedOn");
 
+                    b.Property<Guid?>("ProductId")
+                        .IsRequired();
+
                     b.Property<bool>("RecordActive");
 
                     b.Property<bool>("RecordDeleted");
 
                     b.Property<int>("RecordOrder");
 
-                    b.Property<Guid>("ShopId");
-
                     b.Property<Guid?>("UpdatedBy");
 
                     b.Property<DateTime?>("UpdatedOn");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid?>("UserId")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ShopId");
+                    b.HasIndex("ProductId");
 
                     b.HasIndex("UserId");
 
@@ -461,15 +465,15 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Comment", b =>
                 {
-                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Shop", "Shop")
+                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Product", "Product")
                         .WithMany("Comments")
-                        .HasForeignKey("ShopId")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.User", "User")
                         .WithMany("Comments")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Product", b =>

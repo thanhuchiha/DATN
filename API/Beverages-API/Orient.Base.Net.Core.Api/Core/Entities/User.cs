@@ -94,10 +94,7 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
 
         public List<Comment> Comments { get; set; }
 
-        //[ForeignKey("ShopId")]
-        //public Shop Shop { get; set; }
-
-//public Guid ShopId { get; set; }
+        public List<UserInShop> UserInShops { get; set; }
         #endregion
     }
 }

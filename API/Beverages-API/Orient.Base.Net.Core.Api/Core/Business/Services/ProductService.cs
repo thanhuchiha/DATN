@@ -174,8 +174,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
                     //update Product
                     productManageModel.SetDataToModel(product);
 
-                    
-
                     //update productInCategory
                     await _productInCategoryReponsitory.DeleteAsync(product.ProductInCategories);
 

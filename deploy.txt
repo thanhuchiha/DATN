@@ -1,0 +1,8 @@
+API
+copy .xml to publish
+cmd -> 
+SET ASPNETCORE_URLS=http://*:2222 && dotnet Orient.Base.Net.Core.Api.dll
+WEB ADMIN
+Create file server.js
+  npm run build
+  node server.js

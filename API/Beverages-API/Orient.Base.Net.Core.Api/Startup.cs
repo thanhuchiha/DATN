@@ -83,6 +83,7 @@ namespace Orient.Base.Net.Core.Api
                     .AllowCredentials());
             });
 
+
             services.AddMvc().AddJsonOptions(opt =>
             {
                 opt.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
@@ -111,6 +112,7 @@ namespace Orient.Base.Net.Core.Api
                 config.AddProfile<CategoryProfile>();
                 config.AddProfile<ProductProfile>();
                 config.AddProfile<ShopProfile>();
+                config.AddProfile<CommentProfile>();
             });
 
             var conn = Configuration.GetConnectionString("DefaultConnectionString");
@@ -138,6 +140,9 @@ namespace Orient.Base.Net.Core.Api
 
             //Shop Service
             services.AddScoped<IShopService, ShopService>();
+
+            //Comment Service
+            services.AddScoped<ICommentService, CommentService>();
 
             // Set Service Provider for IoC Helper
             IoCHelper.SetServiceProvider(services.BuildServiceProvider());

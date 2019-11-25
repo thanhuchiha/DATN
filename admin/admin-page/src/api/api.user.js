@@ -8,4 +8,5 @@ export default class UserApi {
     static getUserProfile(id) {
         return RequestHepper.get(appConfig.apiUrl + `users/${id}`);
     }
+    
 }

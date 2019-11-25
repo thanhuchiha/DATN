@@ -177,24 +177,19 @@
             Super Admin
             </summary>
         </member>
-        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.BOD">
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.Admin">
             <summary>
-            BoD
+            Admin
             </summary>
         </member>
-        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.HRM">
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.Shipper">
             <summary>
-            HR Manager
+            Shipper
             </summary>
         </member>
-        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.HR">
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.User">
             <summary>
-            HR
-            </summary>
-        </member>
-        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.Dev">
-            <summary>
-            Dev
+            User
             </summary>
         </member>
         <member name="T:Orient.Base.Net.Core.Api.Core.Common.Constants.UserConstants">

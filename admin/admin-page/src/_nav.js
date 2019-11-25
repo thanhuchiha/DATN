@@ -16,14 +16,20 @@ export default {
       icon: "fa fa-list"
     },
     {
-      name: "User Management",
-      url: "/user-management",
-      icon: "fa fa-users "
+      name: "Shop",
+      url: "/shop",
+      icon:"fa fa-product-hunt"
     },
     {
       name: "Product",
       url: "/product",
       icon:"fa fa-product-hunt"
+    },
+    {
+      name: "User Management",
+      url: "/user-management",
+      icon: "fa fa-users "
     }
+    
   ]
 };
